@@ -1,0 +1,262 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+
+.home__logo {
+  height: 3rem;
+}
+.home__header {
+  margin: 2rem 8rem;
+}
+
+/**nav****/
+.nav {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.nav__links {
+  display: flex;
+}
+.nav__links li:not(:last-child) {
+  margin-right: 44px;
+}
+.nav__links li.active a {
+  color: hsl(5, 85%, 63%);
+}
+.nav__links li a {
+  color: hsl(236, 13%, 42%);
+  font-size: 15px;
+  letter-spacing: 1px;
+}
+.nav__links li a:hover {
+  color: hsl(5, 85%, 63%);
+}
+.menu__open {
+  display: none;
+}
+.menu__close {
+  display: none;
+}
+.btn {
+  display: none;
+}
+/********nav******/
+#home {
+  display: flex;
+  gap: 2rem;
+  margin: 0 8rem;
+  height: 28rem;
+  margin-bottom: 3rem;
+}
+.home__image {
+  /* width: 60rem; */
+  height: 30rem;
+}
+.home__image img {
+  width: 100%;
+  height: 60%;
+}
+.area__text {
+  display: flex;
+  gap: 3rem;
+  margin-top: 20px;
+}
+.area--description {
+  color: hsl(240, 100%, 5%);
+  font-weight: 700;
+  font-size: 3.5rem;
+  line-height: 2.8rem;
+}
+.area--matter {
+  color: hsl(236, 13%, 42%);
+  font-size: 1Spx;
+}
+.first--button {
+  background-color: hsl(5, 85%, 63%);
+  border: none;
+  color: hsl(36, 100%, 99%);
+  padding: 1rem 3rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-top: 1.5rem;
+  cursor: pointer;
+}
+.touch {
+  background-color: hsl(240, 100%, 5%);
+}
+.content {
+  background-color: hsl(240, 100%, 5%);
+  color: hsl(36, 100%, 99%);
+  width: 45rem;
+  padding-right: 1.7rem;
+  padding-left: 1rem;
+}
+.content h2 {
+  color: hsl(35, 77%, 62%);
+  padding: 3rem 0 0;
+}
+.content__first:not(:last-child) {
+  border-bottom: 1px solid hsl(236, 13%, 42%);
+}
+.content__first h3 {
+  padding: 20px 0;
+  cursor: pointer;
+}
+.content__first h3.active {
+  color: hsl(35, 77%, 62%);
+}
+.content__second h3 {
+  padding: 20px 0;
+  cursor: pointer;
+}
+.content__first p {
+  margin-bottom: 2rem;
+  font-size: 15px;
+}
+
+.section__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 15px;
+}
+.section__first {
+  display: flex;
+  gap: 1rem;
+}
+.section__first h2 {
+  color: hsl(233, 8%, 79%);
+}
+.section__first h3 {
+  cursor: pointer;
+  padding: 10px 0;
+  color: hsl(240, 100%, 5%);
+}
+.section__second h3.active {
+  color: hsl(5, 85%, 63%);
+}
+.section__first p {
+  color: hsl(236, 13%, 42%);
+  font-size: 15px;
+}
+#trend {
+  margin: 0 7rem 1rem;
+}
+.section__image {
+  width: 8rem;
+  height: 7rem;
+}
+.section__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+@media screen and (max-width: 1024px) {
+  .nav {
+    display: flex;
+
+    justify-content: space-between;
+    /* align-items: center; */
+  }
+
+  .nav__links {
+    position: absolute;
+    display: none;
+    top: 0;
+    right: 0;
+    width: 20rem;
+    height: 100vh;
+    flex-direction: column;
+    background: #fff;
+    box-shadow: 0 4px 4px 0 #afacac75;
+    padding-top: 5rem;
+    padding-left: 4rem;
+    line-height: 40px;
+    z-index: 99rem;
+    align-items: center;
+    justify-content: center;
+  }
+  .nav__links li {
+    /* align-items: center;
+    justify-content: center; */
+    /* left: 3rem;  */
+    right: 3rem;
+  }
+  .btn {
+    display: flex;
+    border: none;
+    outline: none;
+  }
+
+  .menu__open {
+    display: flex;
+    position: absolute;
+    border: none;
+    outline: none;
+    top: 3rem;
+    right: 2rem;
+    cursor: pointer;
+    background: transparent;
+  }
+
+  .menu__close {
+    display: flex;
+    position: absolute;
+    right: 6rem;
+    top: 1rem;
+    border: none;
+    outline: none;
+    background: none;
+    margin-bottom: 5rem;
+    cursor: pointer;
+  }
+  #home {
+    display: block;
+    margin: 2rem;
+  }
+  .home__header {
+    margin: 2rem;
+  }
+  .home__image {
+    object-fit: contain;
+    max-width: 100%;
+  }
+  .area__text {
+    display: block;
+  }
+  .area--matter {
+    margin: 2rem 0;
+  }
+  .wow {
+    padding-bottom: 4rem;
+  }
+  .content {
+    width: 19rem;
+    position: relative;
+    bottom: -10rem;
+    /* position: absolute; */
+    /* bottom: 7rem; */
+  }
+  #trend {
+    margin: 1rem;
+  }
+  .section__grid {
+    display: block;
+    position: absolute;
+    top: 74rem;
+  }
+  .section__first {
+    margin-bottom: 2rem;
+  }
+}
